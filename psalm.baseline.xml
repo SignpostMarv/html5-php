@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="3.6.1@7857b07f91bed5afae98574243fed7ec4088d623">
+  <file src="src/HTML5.php">
+    <MissingPropertyType occurrences="1">
+      <code>$errors</code>
+    </MissingPropertyType>
+    <MixedArgument occurrences="4">
+      <code>$this-&gt;errors</code>
+      <code>!empty($options['encoding']) ? $options['encoding'] : 'UTF-8'</code>
+      <code>!empty($options['encoding']) ? $options['encoding'] : 'UTF-8'</code>
+      <code>$dom</code>
+    </MixedArgument>
+    <MixedInferredReturnType occurrences="2">
+      <code>array</code>
+      <code>\DOMDocument</code>
+    </MixedInferredReturnType>
+    <MixedReturnStatement occurrences="2">
+      <code>$this-&gt;errors</code>
+      <code>$events-&gt;document()</code>
+    </MixedReturnStatement>
+    <UnusedClass occurrences="1">
+      <code>HTML5</code>
+    </UnusedClass>
+  </file>
+  <file src="src/HTML5/Elements.php">
+    <MixedArrayAccess occurrences="2">
+      <code>static::$svgCaseSensitiveElementMap[$name]</code>
+      <code>static::$svgCaseSensitiveAttributeMap[$name]</code>
+    </MixedArrayAccess>
+    <MixedAssignment occurrences="2">
+      <code>$name</code>
+      <code>$name</code>
+    </MixedAssignment>
+    <MixedInferredReturnType occurrences="3">
+      <code>int</code>
+      <code>string</code>
+      <code>string</code>
+    </MixedInferredReturnType>
+    <MixedReturnStatement occurrences="5">
+      <code>static::$html5[$name]</code>
+      <code>static::$svg[$name]</code>
+      <code>static::$mathml[$name]</code>
+      <code>$name</code>
+      <code>$name</code>
+    </MixedReturnStatement>
+    <PossiblyUnusedMethod occurrences="1">
+      <code>isElement</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/HTML5/Entities.php">
+    <MissingPropertyType occurrences="1">
+      <code>$byName</code>
+    </MissingPropertyType>
+  </file>
+  <file src="src/HTML5/Parser/CharacterReference.php">
+    <MissingParamType occurrences="2">
+      <code>$int</code>
+      <code>$hexdec</code>
+    </MissingParamType>
+    <MissingPropertyType occurrences="1">
+      <code>$numeric_mask</code>
+    </MissingPropertyType>
+    <MixedArgument occurrences="2">
+      <code>static::$numeric_mask</code>
+      <code>$hexdec</code>
+    </MixedArgument>
+    <MixedArrayAccess occurrences="1">
+      <code>Entities::$byName[$name]</code>
+    </MixedArrayAccess>
+    <MixedInferredReturnType occurrences="1">
+      <code>string</code>
+    </MixedInferredReturnType>
+    <MixedOperand occurrences="1">
+      <code>$int</code>
+    </MixedOperand>
+    <MixedReturnStatement occurrences="1">
+      <code>isset(Entities::$byName[$name]) ? Entities::$byName[$name] : null</code>
+    </MixedReturnStatement>
+  </file>
+  <file src="src/HTML5/Parser/DOMTreeBuilder.php">
+    <MissingParamType occurrences="8">
+      <code>$isFragment</code>
+      <code>$name</code>
+      <code>$cdata</code>
+      <code>$data</code>
+      <code>$msg</code>
+      <code>$line</code>
+      <code>$col</code>
+      <code>$name</code>
+    </MissingParamType>
+    <MissingPropertyType occurrences="9">
+      <code>$options</code>
+      <code>$stack</code>
+      <code>$current</code>
+      <code>$rules</code>
+      <code>$doc</code>
+      <code>$frag</code>
+      <code>$processor</code>
+      <code>$insertMode</code>
+      <code>$errors</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="2">
+      <code>document</code>
+      <code>getErrors</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="9">
+      <code>$ele</code>
+      <code>$name</code>
+      <code>$name</code>
+      <code>$this-&gt;current</code>
+      <code>$data</code>
+      <code>$line</code>
+      <code>$col</code>
+      <code>$msg</code>
+      <code>$this-&gt;current</code>
+    </MixedArgument>
+    <MixedArgumentTypeCoercion occurrences="7">
+      <code>$aName</code>
+      <code>$aName</code>
+      <code>$aName</code>
+      <code>$aName</code>
+      <code>$aName</code>
+      <code>$aName</code>
+      <code>$aName</code>
+    </MixedArgumentTypeCoercion>
+    <MixedArrayAccess occurrences="6">
+      <code>$this-&gt;nsStack[0]['']</code>
+      <code>$this-&gt;nsStack[0][$prefix]</code>
+      <code>$this-&gt;options[self::OPT_DISABLE_HTML_NS]</code>
+      <code>$this-&gt;nsStack[0][$prefix]</code>
+      <code>$this-&gt;nsStack[0][$prefix]</code>
+      <code>$this-&gt;pushes[$cid][0]</code>
+    </MixedArrayAccess>
+    <MixedAssignment occurrences="17">
+      <code>$implicitNS</code>
+      <code>$implicitNS</code>
+      <code>$aVal</code>
+      <code>$needsWorkaround</code>
+      <code>$ele</code>
+      <code>$ele</code>
+      <code>$ele</code>
+      <code>$ele</code>
+      <code>$aVal</code>
+      <code>$node</code>
+      <code>$node</code>
+      <code>$node</code>
+      <code>$node</code>
+      <code>$working</code>
+      <code>$working</code>
+      <code>$candidate</code>
+      <code>$candidate</code>
+    </MixedAssignment>
+    <MixedInferredReturnType occurrences="1">
+      <code>\DOMDocumentFragment</code>
+    </MixedInferredReturnType>
+    <MixedMethodCall occurrences="20">
+      <code>createDocumentFragment</code>
+      <code>importNode</code>
+      <code>createElement</code>
+      <code>createElementNS</code>
+      <code>createElement</code>
+      <code>setAttributeNS</code>
+      <code>setAttributeNS</code>
+      <code>setAttribute</code>
+      <code>setIdAttribute</code>
+      <code>hasRules</code>
+      <code>evaluate</code>
+      <code>appendChild</code>
+      <code>createComment</code>
+      <code>appendChild</code>
+      <code>createTextNode</code>
+      <code>appendChild</code>
+      <code>createCDATASection</code>
+      <code>appendChild</code>
+      <code>createProcessingInstruction</code>
+      <code>appendChild</code>
+    </MixedMethodCall>
+    <MixedOperand occurrences="5">
+      <code>$implicitNS</code>
+      <code>$this-&gt;nsStack[0]</code>
+      <code>$this-&gt;nsStack[0]</code>
+      <code>$this-&gt;nsStack[0]</code>
+      <code>$this-&gt;nsStack[0][$prefix]</code>
+    </MixedOperand>
+    <MixedPropertyFetch occurrences="9">
+      <code>$this-&gt;doc-&gt;documentElement</code>
+      <code>$working-&gt;nodeType</code>
+      <code>$working-&gt;tagName</code>
+      <code>$working-&gt;parentNode</code>
+      <code>$working-&gt;parentNode</code>
+      <code>$candidate-&gt;nodeType</code>
+      <code>$candidate-&gt;tagName</code>
+      <code>$candidate-&gt;parentNode</code>
+      <code>$this-&gt;current-&gt;tagName</code>
+    </MixedPropertyFetch>
+    <MixedReturnStatement occurrences="1">
+      <code>$this-&gt;frag</code>
+    </MixedReturnStatement>
+    <NullArgument occurrences="2">
+      <code>null</code>
+      <code>null</code>
+    </NullArgument>
+    <PossiblyFalseOperand occurrences="1">
+      <code>$pos</code>
+    </PossiblyFalseOperand>
+    <PossiblyNullArgument occurrences="1">
+      <code>$data</code>
+    </PossiblyNullArgument>
+    <PossiblyUnusedMethod occurrences="4">
+      <code>setInstructionProcessor</code>
+      <code>quirksTreeResolver</code>
+      <code>isAncestor</code>
+      <code>isParent</code>
+    </PossiblyUnusedMethod>
+    <PossiblyUnusedProperty occurrences="1">
+      <code>$stack</code>
+    </PossiblyUnusedProperty>
+    <RedundantConditionGivenDocblockType occurrences="1">
+      <code>empty($res)</code>
+    </RedundantConditionGivenDocblockType>
+    <UnusedFunctionCall occurrences="1">
+      <code>substr</code>
+    </UnusedFunctionCall>
+  </file>
+  <file src="src/HTML5/Parser/EventHandler.php">
+    <MissingParamType occurrences="6">
+      <code>$name</code>
+      <code>$cdata</code>
+      <code>$cdata</code>
+      <code>$msg</code>
+      <code>$line</code>
+      <code>$col</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="8">
+      <code>doctype</code>
+      <code>endTag</code>
+      <code>comment</code>
+      <code>text</code>
+      <code>eof</code>
+      <code>parseError</code>
+      <code>cdata</code>
+      <code>processingInstruction</code>
+    </MissingReturnType>
+    <PossiblyUnusedMethod occurrences="6">
+      <code>doctype</code>
+      <code>comment</code>
+      <code>text</code>
+      <code>eof</code>
+      <code>cdata</code>
+      <code>processingInstruction</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/HTML5/Parser/FileInputStream.php">
+    <DeprecatedClass occurrences="2">
+      <code>StringInputStream</code>
+      <code>parent::__construct($content, $encoding, $debug)</code>
+    </DeprecatedClass>
+    <DeprecatedInterface occurrences="1">
+      <code>FileInputStream</code>
+    </DeprecatedInterface>
+    <UnusedClass occurrences="1">
+      <code>FileInputStream</code>
+    </UnusedClass>
+  </file>
+  <file src="src/HTML5/Parser/InputStream.php">
+    <MissingReturnType occurrences="5">
+      <code>currentLine</code>
+      <code>remainingChars</code>
+      <code>charsWhile</code>
+      <code>unconsume</code>
+      <code>peek</code>
+    </MissingReturnType>
+    <PossiblyUnusedMethod occurrences="5">
+      <code>remainingChars</code>
+      <code>charsUntil</code>
+      <code>charsWhile</code>
+      <code>unconsume</code>
+      <code>peek</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/HTML5/Parser/Scanner.php">
+    <FalsableReturnStatement occurrences="5">
+      <code>false</code>
+      <code>false</code>
+      <code>false</code>
+      <code>false</code>
+      <code>false</code>
+    </FalsableReturnStatement>
+    <InvalidCast occurrences="1">
+      <code>$data</code>
+    </InvalidCast>
+    <InvalidFalsableReturnType occurrences="2">
+      <code>int</code>
+      <code>string</code>
+    </InvalidFalsableReturnType>
+    <InvalidReturnStatement occurrences="3">
+      <code>$this-&gt;doCharsWhile($mask)</code>
+      <code>$data</code>
+      <code>''</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="2">
+      <code>int</code>
+      <code>int</code>
+    </InvalidReturnType>
+    <MissingParamType occurrences="1">
+      <code>$data</code>
+    </MissingParamType>
+    <MixedArgument occurrences="31">
+      <code>$this-&gt;data</code>
+      <code>$this-&gt;char</code>
+      <code>static::CHARS_HEX</code>
+      <code>static::CHARS_ALPHA</code>
+      <code>static::CHARS_ALNUM</code>
+      <code>$this-&gt;data</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;data</code>
+      <code>min($this-&gt;char, $this-&gt;EOF)</code>
+      <code>$this-&gt;data</code>
+      <code>$this-&gt;data</code>
+      <code>$backwardFrom</code>
+      <code>$this-&gt;data</code>
+      <code>$this-&gt;char - 1 - $lastLine</code>
+      <code>$this-&gt;data</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;data</code>
+      <code>$this-&gt;char</code>
+      <code>$data</code>
+      <code>$this-&gt;data</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;data</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;data</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;data</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;data</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;data</code>
+      <code>$this-&gt;char</code>
+    </MixedArgument>
+    <MixedArrayAccess occurrences="3">
+      <code>$this-&gt;data[$this-&gt;char + 1]</code>
+      <code>$this-&gt;data[$this-&gt;char]</code>
+      <code>$this-&gt;data[$this-&gt;char]</code>
+    </MixedArrayAccess>
+    <MixedArrayOffset occurrences="3">
+      <code>$this-&gt;data[$this-&gt;char + 1]</code>
+      <code>$this-&gt;data[$this-&gt;char]</code>
+      <code>$this-&gt;data[$this-&gt;char]</code>
+    </MixedArrayOffset>
+    <MixedAssignment occurrences="1">
+      <code>$backwardFrom</code>
+    </MixedAssignment>
+    <MixedInferredReturnType occurrences="4">
+      <code>int</code>
+      <code>string</code>
+      <code>string</code>
+      <code>string</code>
+    </MixedInferredReturnType>
+    <MixedOperand occurrences="11">
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;char</code>
+    </MixedOperand>
+    <MixedReturnStatement occurrences="4">
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;data[$this-&gt;char + 1]</code>
+      <code>$this-&gt;data[$this-&gt;char]</code>
+      <code>$this-&gt;data[$this-&gt;char]</code>
+    </MixedReturnStatement>
+    <PossiblyNullArgument occurrences="2">
+      <code>$max</code>
+      <code>$max</code>
+    </PossiblyNullArgument>
+    <PossiblyUnusedMethod occurrences="17">
+      <code>sequenceMatches</code>
+      <code>position</code>
+      <code>peek</code>
+      <code>next</code>
+      <code>current</code>
+      <code>consume</code>
+      <code>unconsume</code>
+      <code>getHex</code>
+      <code>getAsciiAlpha</code>
+      <code>getAsciiAlphaNum</code>
+      <code>getNumeric</code>
+      <code>whitespace</code>
+      <code>currentLine</code>
+      <code>charsUntil</code>
+      <code>charsWhile</code>
+      <code>columnOffset</code>
+      <code>remainingChars</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/HTML5/Parser/StringInputStream.php">
+    <DeprecatedInterface occurrences="1">
+      <code>StringInputStream</code>
+    </DeprecatedInterface>
+    <FalsableReturnStatement occurrences="1">
+      <code>false</code>
+    </FalsableReturnStatement>
+    <InvalidFalsableReturnType occurrences="1">
+      <code>string</code>
+    </InvalidFalsableReturnType>
+    <MissingParamType occurrences="1">
+      <code>$data</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="5">
+      <code>replaceLinefeeds</code>
+      <code>currentLine</code>
+      <code>getCurrentLine</code>
+      <code>getColumnOffset</code>
+      <code>peek</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="25">
+      <code>$data</code>
+      <code>$data</code>
+      <code>$this-&gt;data</code>
+      <code>min($this-&gt;char, $this-&gt;EOF)</code>
+      <code>$this-&gt;data</code>
+      <code>$this-&gt;data</code>
+      <code>$backwardFrom</code>
+      <code>$this-&gt;data</code>
+      <code>$this-&gt;char - 1 - $lastLine</code>
+      <code>$this-&gt;data</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;data</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;data</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;data</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;data</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;data</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;data</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;data</code>
+      <code>$this-&gt;char</code>
+    </MixedArgument>
+    <MixedArrayAccess occurrences="2">
+      <code>$this-&gt;data[$this-&gt;char]</code>
+      <code>$this-&gt;data[$this-&gt;char + 1]</code>
+    </MixedArrayAccess>
+    <MixedArrayOffset occurrences="2">
+      <code>$this-&gt;data[$this-&gt;char]</code>
+      <code>$this-&gt;data[$this-&gt;char + 1]</code>
+    </MixedArrayOffset>
+    <MixedAssignment occurrences="2">
+      <code>$data</code>
+      <code>$backwardFrom</code>
+    </MixedAssignment>
+    <MixedInferredReturnType occurrences="1">
+      <code>string</code>
+    </MixedInferredReturnType>
+    <MixedOperand occurrences="9">
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;char</code>
+      <code>$this-&gt;char</code>
+    </MixedOperand>
+    <MixedReturnStatement occurrences="1">
+      <code>$this-&gt;data[$this-&gt;char]</code>
+    </MixedReturnStatement>
+    <PossiblyNullArgument occurrences="2">
+      <code>$max</code>
+      <code>$max</code>
+    </PossiblyNullArgument>
+    <PossiblyUnusedMethod occurrences="2">
+      <code>getCurrentLine</code>
+      <code>getColumnOffset</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/HTML5/Parser/Tokenizer.php">
+    <DocblockTypeContradiction occurrences="2">
+      <code>false === $tok</code>
+      <code>null === $entity</code>
+    </DocblockTypeContradiction>
+    <FalsableReturnStatement occurrences="1">
+      <code>false</code>
+    </FalsableReturnStatement>
+    <InvalidFalsableReturnType occurrences="1">
+      <code>string</code>
+    </InvalidFalsableReturnType>
+    <InvalidReturnStatement occurrences="1">
+      <code>$entity</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>string</code>
+    </InvalidReturnType>
+    <MissingParamType occurrences="1">
+      <code>$selfClose</code>
+    </MissingParamType>
+    <MissingPropertyType occurrences="7">
+      <code>$scanner</code>
+      <code>$events</code>
+      <code>$tok</code>
+      <code>$carryOn</code>
+      <code>$textMode</code>
+      <code>$untilTag</code>
+      <code>$mode</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="7">
+      <code>consumeData</code>
+      <code>characterData</code>
+      <code>markupDeclaration</code>
+      <code>endTag</code>
+      <code>tagName</code>
+      <code>isTagEnd</code>
+      <code>unquotedAttributeValue</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="19">
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$this-&gt;untilTag</code>
+      <code>$tok</code>
+      <code>$name</code>
+      <code>$name</code>
+      <code>$name</code>
+      <code>$this-&gt;scanner-&gt;charsUntil("/&gt;=\n\f\t ")</code>
+      <code>$name</code>
+      <code>$name</code>
+      <code>$tok</code>
+      <code>$doctypeName</code>
+      <code>$this-&gt;scanner-&gt;getAsciiAlpha()</code>
+      <code>$procName</code>
+      <code>$cname</code>
+    </MixedArgument>
+    <MixedArrayOffset occurrences="1">
+      <code>$attributes[$name]</code>
+    </MixedArrayOffset>
+    <MixedAssignment occurrences="57">
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$name</code>
+      <code>$name</code>
+      <code>$tok</code>
+      <code>$name</code>
+      <code>$name</code>
+      <code>$mode</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$name</code>
+      <code>$tok</code>
+      <code>$tokens</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$tokens</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$chars</code>
+      <code>$tok</code>
+      <code>$doctypeName</code>
+      <code>$tok</code>
+      <code>$white</code>
+      <code>$id</code>
+      <code>$tok</code>
+      <code>$ret</code>
+      <code>$chars</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$procName</code>
+      <code>$white</code>
+      <code>$tok</code>
+      <code>$line</code>
+      <code>$col</code>
+      <code>$tok</code>
+      <code>$start</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$hex</code>
+      <code>$numeric</code>
+      <code>$cname</code>
+      <code>$tok</code>
+    </MixedAssignment>
+    <MixedInferredReturnType occurrences="4">
+      <code>bool</code>
+      <code>bool</code>
+      <code>string|null</code>
+      <code>bool</code>
+    </MixedInferredReturnType>
+    <MixedMethodCall occurrences="151">
+      <code>current</code>
+      <code>current</code>
+      <code>next</code>
+      <code>current</code>
+      <code>consume</code>
+      <code>charsUntil</code>
+      <code>current</code>
+      <code>consume</code>
+      <code>text</code>
+      <code>sequenceMatches</code>
+      <code>current</code>
+      <code>next</code>
+      <code>consume</code>
+      <code>whitespace</code>
+      <code>current</code>
+      <code>unconsume</code>
+      <code>text</code>
+      <code>eof</code>
+      <code>next</code>
+      <code>peek</code>
+      <code>consume</code>
+      <code>current</code>
+      <code>next</code>
+      <code>charsUntil</code>
+      <code>whitespace</code>
+      <code>current</code>
+      <code>charsUntil</code>
+      <code>endTag</code>
+      <code>consume</code>
+      <code>charsWhile</code>
+      <code>whitespace</code>
+      <code>startTag</code>
+      <code>consume</code>
+      <code>current</code>
+      <code>consume</code>
+      <code>whitespace</code>
+      <code>current</code>
+      <code>current</code>
+      <code>unconsume</code>
+      <code>charsUntil</code>
+      <code>current</code>
+      <code>consume</code>
+      <code>whitespace</code>
+      <code>current</code>
+      <code>consume</code>
+      <code>whitespace</code>
+      <code>current</code>
+      <code>consume</code>
+      <code>charsUntil</code>
+      <code>current</code>
+      <code>consume</code>
+      <code>current</code>
+      <code>current</code>
+      <code>next</code>
+      <code>charsUntil</code>
+      <code>current</code>
+      <code>charsUntil</code>
+      <code>current</code>
+      <code>comment</code>
+      <code>consume</code>
+      <code>current</code>
+      <code>comment</code>
+      <code>consume</code>
+      <code>next</code>
+      <code>comment</code>
+      <code>consume</code>
+      <code>current</code>
+      <code>next</code>
+      <code>peek</code>
+      <code>consume</code>
+      <code>unconsume</code>
+      <code>sequenceMatches</code>
+      <code>consume</code>
+      <code>charsWhile</code>
+      <code>whitespace</code>
+      <code>current</code>
+      <code>doctype</code>
+      <code>charsUntil</code>
+      <code>current</code>
+      <code>doctype</code>
+      <code>doctype</code>
+      <code>consume</code>
+      <code>doctype</code>
+      <code>consume</code>
+      <code>whitespace</code>
+      <code>getAsciiAlpha</code>
+      <code>whitespace</code>
+      <code>doctype</code>
+      <code>current</code>
+      <code>doctype</code>
+      <code>whitespace</code>
+      <code>current</code>
+      <code>doctype</code>
+      <code>consume</code>
+      <code>charsUntil</code>
+      <code>doctype</code>
+      <code>consume</code>
+      <code>charsUntil</code>
+      <code>doctype</code>
+      <code>consume</code>
+      <code>current</code>
+      <code>consume</code>
+      <code>charsUntil</code>
+      <code>current</code>
+      <code>consume</code>
+      <code>current</code>
+      <code>consume</code>
+      <code>charsWhile</code>
+      <code>current</code>
+      <code>next</code>
+      <code>next</code>
+      <code>sequenceMatches</code>
+      <code>consume</code>
+      <code>cdata</code>
+      <code>current</code>
+      <code>next</code>
+      <code>getAsciiAlpha</code>
+      <code>whitespace</code>
+      <code>current</code>
+      <code>current</code>
+      <code>peek</code>
+      <code>current</code>
+      <code>next</code>
+      <code>processingInstruction</code>
+      <code>consume</code>
+      <code>processingInstruction</code>
+      <code>current</code>
+      <code>charsUntil</code>
+      <code>sequenceMatches</code>
+      <code>current</code>
+      <code>consume</code>
+      <code>sequenceMatches</code>
+      <code>text</code>
+      <code>currentLine</code>
+      <code>columnOffset</code>
+      <code>parseError</code>
+      <code>next</code>
+      <code>position</code>
+      <code>next</code>
+      <code>next</code>
+      <code>getHex</code>
+      <code>unconsume</code>
+      <code>getNumeric</code>
+      <code>unconsume</code>
+      <code>getAsciiAlphaNum</code>
+      <code>unconsume</code>
+      <code>position</code>
+      <code>current</code>
+      <code>consume</code>
+      <code>unconsume</code>
+      <code>position</code>
+    </MixedMethodCall>
+    <MixedOperand occurrences="24">
+      <code>$this-&gt;text</code>
+      <code>$this-&gt;text</code>
+      <code>$this-&gt;untilTag</code>
+      <code>$this-&gt;untilTag</code>
+      <code>$tok</code>
+      <code>$this-&gt;scanner-&gt;whitespace()</code>
+      <code>$tokens</code>
+      <code>$tok</code>
+      <code>$this-&gt;scanner-&gt;charsUntil("\t\n\f &gt;&amp;\"'&lt;=`")</code>
+      <code>$tokens</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$chars</code>
+      <code>$tok</code>
+      <code>$chars</code>
+      <code>$tok</code>
+      <code>$tok</code>
+      <code>$procName</code>
+      <code>$this-&gt;scanner-&gt;current()</code>
+      <code>$this-&gt;scanner-&gt;charsUntil($first)</code>
+      <code>$this-&gt;scanner-&gt;current()</code>
+      <code>$this-&gt;text</code>
+      <code>$this-&gt;scanner-&gt;position()</code>
+      <code>$this-&gt;scanner-&gt;position()</code>
+    </MixedOperand>
+    <MixedReturnStatement occurrences="5">
+      <code>$this-&gt;endTag()</code>
+      <code>$this-&gt;endTag()</code>
+      <code>$this-&gt;unquotedAttributeValue()</code>
+      <code>$this-&gt;unquotedAttributeValue()</code>
+      <code>$this-&gt;scanner-&gt;sequenceMatches($sequence, $caseSensitive)</code>
+    </MixedReturnStatement>
+    <PossiblyFalseOperand occurrences="1">
+      <code>$entity</code>
+    </PossiblyFalseOperand>
+    <PossiblyInvalidOperand occurrences="1">
+      <code>$entity</code>
+    </PossiblyInvalidOperand>
+    <PossiblyNullOperand occurrences="1">
+      <code>$entity</code>
+    </PossiblyNullOperand>
+    <PossiblyUnusedMethod occurrences="1">
+      <code>sequenceMatches</code>
+    </PossiblyUnusedMethod>
+    <PossiblyUnusedProperty occurrences="1">
+      <code>$tok</code>
+    </PossiblyUnusedProperty>
+    <ReferenceConstraintViolation occurrences="2">
+      <code>return true;</code>
+      <code>$attributes</code>
+    </ReferenceConstraintViolation>
+  </file>
+  <file src="src/HTML5/Parser/TreeBuildingRules.php">
+    <MissingParamType occurrences="12">
+      <code>$tagname</code>
+      <code>$new</code>
+      <code>$current</code>
+      <code>$ele</code>
+      <code>$current</code>
+      <code>$ele</code>
+      <code>$current</code>
+      <code>$ele</code>
+      <code>$current</code>
+      <code>$ele</code>
+      <code>$current</code>
+      <code>$match</code>
+    </MissingParamType>
+    <MissingPropertyType occurrences="1">
+      <code>$tags</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="5">
+      <code>hasRules</code>
+      <code>handleLI</code>
+      <code>handleDT</code>
+      <code>handleRT</code>
+      <code>closeIfCurrentMatches</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="1">
+      <code>$match</code>
+    </MixedArgument>
+    <MixedArrayOffset occurrences="1">
+      <code>static::$tags[$tagname]</code>
+    </MixedArrayOffset>
+    <MixedInferredReturnType occurrences="1">
+      <code>\DOMElement</code>
+    </MixedInferredReturnType>
+    <MixedMethodCall occurrences="2">
+      <code>appendChild</code>
+      <code>appendChild</code>
+    </MixedMethodCall>
+    <MixedPropertyFetch occurrences="3">
+      <code>$new-&gt;tagName</code>
+      <code>$current-&gt;tagName</code>
+      <code>$current-&gt;parentNode</code>
+    </MixedPropertyFetch>
+    <MixedReturnStatement occurrences="9">
+      <code>$this-&gt;handleLI($new, $current)</code>
+      <code>$this-&gt;handleDT($new, $current)</code>
+      <code>$this-&gt;handleRT($new, $current)</code>
+      <code>$current</code>
+    </MixedReturnStatement>
+    <PossiblyUnusedMethod occurrences="2">
+      <code>hasRules</code>
+      <code>evaluate</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/HTML5/Parser/UTF8Utils.php">
+    <InvalidOperand occurrences="1">
+      <code>array_sum(array_slice($count, 0, 0x80)) + array_sum(array_slice($count, 0xC2, 0x33))</code>
+    </InvalidOperand>
+    <InvalidReturnStatement occurrences="1">
+      <code>array_sum(array_slice($count, 0, 0x80)) + array_sum(array_slice($count, 0xC2, 0x33))</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>int</code>
+    </InvalidReturnType>
+    <MixedArgument occurrences="2">
+      <code>$count</code>
+      <code>$count</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="1">
+      <code>$count</code>
+    </MixedAssignment>
+    <UnusedFunctionCall occurrences="2">
+      <code>mb_substitute_character</code>
+      <code>mb_substitute_character</code>
+    </UnusedFunctionCall>
+  </file>
+  <file src="src/HTML5/Serializer/HTML5Entities.php">
+    <MissingPropertyType occurrences="1">
+      <code>$map</code>
+    </MissingPropertyType>
+  </file>
+  <file src="src/HTML5/Serializer/OutputRules.php">
+    <MissingParamType occurrences="3">
+      <code>$output</code>
+      <code>$options</code>
+      <code>$ele</code>
+    </MissingParamType>
+    <MissingPropertyType occurrences="6">
+      <code>$traverser</code>
+      <code>$encode</code>
+      <code>$out</code>
+      <code>$outputMode</code>
+      <code>$xpath</code>
+      <code>$nonBooleanAttributes</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="4">
+      <code>attrs</code>
+      <code>nonBooleanAttribute</code>
+      <code>getXPath</code>
+      <code>escape</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="22">
+      <code>static::DOCTYPE</code>
+      <code>$name</code>
+      <code>$ele</code>
+      <code>$name</code>
+      <code>$name</code>
+      <code>$ele</code>
+      <code>$ele-&gt;ownerDocument-&gt;saveXML($ele)</code>
+      <code>$ele-&gt;ownerDocument-&gt;saveXML($ele)</code>
+      <code>$ele-&gt;target</code>
+      <code>$ele-&gt;data</code>
+      <code>$nsNode-&gt;nodeName</code>
+      <code>$nsNode-&gt;nodeValue</code>
+      <code>$this-&gt;traverser-&gt;isLocalElement($ele) ? $ele-&gt;localName : $ele-&gt;tagName</code>
+      <code>$node-&gt;value</code>
+      <code>$name</code>
+      <code>$name</code>
+      <code>$name</code>
+      <code>$node</code>
+      <code>$this-&gt;traverser-&gt;isLocalElement($ele) ? $ele-&gt;localName : $ele-&gt;tagName</code>
+      <code>$this-&gt;out</code>
+      <code>$this-&gt;out</code>
+      <code>HTML5Entities::$map</code>
+    </MixedArgument>
+    <MixedArrayAccess occurrences="2">
+      <code>$rule['prefixes']</code>
+      <code>$rule['xpath']</code>
+    </MixedArrayAccess>
+    <MixedAssignment occurrences="11">
+      <code>$name</code>
+      <code>$name</code>
+      <code>$child</code>
+      <code>$nsNode</code>
+      <code>$map</code>
+      <code>$len</code>
+      <code>$node</code>
+      <code>$name</code>
+      <code>$rule</code>
+      <code>$xp</code>
+      <code>$ns</code>
+    </MixedAssignment>
+    <MixedInferredReturnType occurrences="1">
+      <code>string</code>
+    </MixedInferredReturnType>
+    <MixedMethodCall occurrences="13">
+      <code>node</code>
+      <code>isLocalElement</code>
+      <code>hasChildNodes</code>
+      <code>children</code>
+      <code>saveXML</code>
+      <code>saveXML</code>
+      <code>query</code>
+      <code>isLocalElement</code>
+      <code>hasAttributes</code>
+      <code>item</code>
+      <code>registerNamespace</code>
+      <code>evaluate</code>
+      <code>isLocalElement</code>
+    </MixedMethodCall>
+    <MixedPropertyFetch occurrences="16">
+      <code>$ele-&gt;tagName</code>
+      <code>$ele-&gt;localName</code>
+      <code>$ele-&gt;childNodes</code>
+      <code>$ele-&gt;childNodes</code>
+      <code>$ele-&gt;ownerDocument</code>
+      <code>$ele-&gt;ownerDocument</code>
+      <code>$ele-&gt;target</code>
+      <code>$ele-&gt;data</code>
+      <code>$this-&gt;xpath-&gt;document</code>
+      <code>$nsNode-&gt;nodeValue</code>
+      <code>$nsNode-&gt;nodeName</code>
+      <code>$nsNode-&gt;nodeValue</code>
+      <code>$ele-&gt;attributes</code>
+      <code>$map-&gt;length</code>
+      <code>$node-&gt;value</code>
+      <code>$node-&gt;nodeName</code>
+    </MixedPropertyFetch>
+    <MixedReturnStatement occurrences="1">
+      <code>$this-&gt;escape($text, $attribute)</code>
+    </MixedReturnStatement>
+    <MoreSpecificImplementedParamType occurrences="1">
+      <code>$ele</code>
+    </MoreSpecificImplementedParamType>
+    <PossiblyUnusedMethod occurrences="1">
+      <code>addRule</code>
+    </PossiblyUnusedMethod>
+    <RedundantConditionGivenDocblockType occurrences="1">
+      <code>isset($val) &amp;&amp; '' !== $val</code>
+    </RedundantConditionGivenDocblockType>
+    <UndefinedPropertyFetch occurrences="2">
+      <code>$ele-&gt;tagName</code>
+      <code>$ele-&gt;tagName</code>
+    </UndefinedPropertyFetch>
+  </file>
+  <file src="src/HTML5/Serializer/RulesInterface.php">
+    <MissingReturnType occurrences="6">
+      <code>document</code>
+      <code>element</code>
+      <code>text</code>
+      <code>cdata</code>
+      <code>comment</code>
+      <code>processorInstruction</code>
+    </MissingReturnType>
+    <PossiblyUnusedMethod occurrences="6">
+      <code>document</code>
+      <code>element</code>
+      <code>text</code>
+      <code>cdata</code>
+      <code>comment</code>
+      <code>processorInstruction</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/HTML5/Serializer/Traverser.php">
+    <MissingPropertyType occurrences="5">
+      <code>$dom</code>
+      <code>$options</code>
+      <code>$encode</code>
+      <code>$rules</code>
+      <code>$out</code>
+    </MissingPropertyType>
+    <MixedArrayOffset occurrences="1">
+      <code>static::$local_ns[$uri]</code>
+    </MixedArrayOffset>
+    <MixedAssignment occurrences="1">
+      <code>$uri</code>
+    </MixedAssignment>
+    <MixedInferredReturnType occurrences="1">
+      <code>resource</code>
+    </MixedInferredReturnType>
+    <MixedMethodCall occurrences="6">
+      <code>document</code>
+      <code>element</code>
+      <code>text</code>
+      <code>cdata</code>
+      <code>processorInstruction</code>
+      <code>comment</code>
+    </MixedMethodCall>
+    <MixedPropertyFetch occurrences="2">
+      <code>$node-&gt;nodeType</code>
+      <code>$ele-&gt;namespaceURI</code>
+    </MixedPropertyFetch>
+    <MixedReturnStatement occurrences="1">
+      <code>$this-&gt;out</code>
+    </MixedReturnStatement>
+    <PossiblyUnusedMethod occurrences="1">
+      <code>isLocalElement</code>
+    </PossiblyUnusedMethod>
+    <PossiblyUnusedProperty occurrences="1">
+      <code>$encode</code>
+    </PossiblyUnusedProperty>
+  </file>
+</files>

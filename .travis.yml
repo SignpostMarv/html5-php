@@ -18,6 +18,8 @@ matrix:
     - php: 7.2
     - php: 7.3
       env: BENCHMARK=1
+    - php: 7.3
+      env: PSALM=1
     - php: 7.4snapshot
   fast_finish: true
 
@@ -34,6 +36,7 @@ script:
   - if [ "$CS_FIXER" == 1 ]; then wget https://github.com/FriendsOfPHP/PHP-CS-Fixer/releases/download/v2.13.1/php-cs-fixer.phar && php php-cs-fixer.phar fix --dry-run --diff; fi
   - mkdir -p build/logs
   - ./vendor/bin/phpunit --coverage-clover=coverage.xml
+  - if [ "$PSALM" == 1 ]; then composer remove --dev sami/sami phpunit/phpunit && composer require --dev vimeo/psalm && ./vendor/bin/psalm --show-info=false; fi
 
 after_script:
   - if [ "$SCRUTINIZER" == 1 ]; then wget https://scrutinizer-ci.com/ocular.phar && php ocular.phar code-coverage:upload --format=php-clover coverage.xml; fi
